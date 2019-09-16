@@ -87,8 +87,8 @@ Wonderful! You made it!
 ## Non-Technical User Guide
 
 ### Download
-1. Go to https://github.umn.edu/umn-csci-3081-wendt-S18/project-qixxx259  
-2. _pull_ the project-qixxx259
+1. Go to https://github.com/sidankkirsten/Braitenberg-Vehicle-Simulator  
+2. _pull_ the Braitenberg-Vehicle-Simulator
 
 ### Configuration
 1. libMinGfx should be installed. If it is not installed, please refer to the installation guide of libMinGfx at
@@ -100,7 +100,7 @@ Wonderful! You made it!
 
 #### Build
 1. Modify the `CS3081DIR` variable in `src/Makefile`
-2. At command prompt, `cd _mypath_/project-qixxx259/iteration3/src`.
+2. At command prompt, `cd _mypath_/Braitenberg-Vehicle-Simulator/src`.
   `_mypath_` refers to the path of the project-qixxx259 folder.
 3. At command prompt, `make`
 4. At command prompt, `./../build/bin/arenaviewer`
@@ -125,23 +125,23 @@ The Menu box is located to the right of the Arena
 **Note: If the food is turned off, the robot will never get hungry or starve and will not exhibit aggression.**
 
 ##### Arena Configuration
-Number of Robots
+`Number of Robots`
 
  Moving the slider below Number of Robots to select the number of robots for the next simulation
 
-Number of Lights
+`Number of Lights`
 
  Moving the slider below Number of Lights to select the number of lights for the next simulation
 
-Ratio of Fearful Robots
+`Ratio of Fearful Robots`
 
  Moving the slider below Ratio of Fearful Robots to select the ratio of fearful robots for the next simulation
 
-Light Sensor Sensitivity
+`Light Sensor Sensitivity`
 
  Moving the slider below Light Sensor Sensitivity to select the sensitivity of light sensor for the next simulation. The light sensor will be more acute towards stimuli as sensitivity increases.
 
-Number of Food
+`Number of Food`
 
  Moving the slider below Number of Food to select the number of food for the next simulation. This slider will not work when the food is turned off.
 
