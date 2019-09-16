@@ -4,6 +4,9 @@
 The goal of this software project is to develop a rudimentary robot simulator in which robot behavior is visualized within a graphics window. The robots are modeled after Braitenberg Vehicles, which can autonomously move around based on its sensor inputs. The resulting behavior may appear complex or even intelligent towards stimuli. The environment will have multiple robots, as well as stimuli such as lights and food. Robots will exhibit different behavior towards these stimuli, depending on their sensor-motor connections related to that stimulus. For example, some robots will explore the lights and some fear the lights. And the relationship to food will change over time as the robot gets hungrier. User can build the environment manually by selecting the number of robots, number of lights, number of food, ratio of fearful and exploratory robots, and inclusion of food.
 
 ## Developer Guide
+**Note: For detailed design pattern explanation, please refer to: https://github.com/sidankkirsten/Braitenberg-Vehicle-Simulator/blob/master/docs/Design_Doc.pdf
+
+**Note: UML Diagram is at https://github.com/sidankkirsten/Braitenberg-Vehicle-Simulator/blob/master/docs/UML.pdf
 
 ### 1. Observer Pattern
 The implementation idea is based on the idea that the Subject is the Robot Class, which serves to update robot’s velocity and position and notify all the other sensors when an entity, such as food and light, has been updated for each time step in the arena. Observer is the main Sensor class. The `Robot::LightNotify()` and `Robot::FoodNotify` will be called whenever the observed object, such as food and light, is changed.
